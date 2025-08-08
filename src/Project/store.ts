@@ -279,7 +279,7 @@ export const useProjectStore = create(
 );
 
 // level should be 1 level higher that the highest overlapping text box
-function getNewTextLevel(start: number, end: number, lyricTexts: LyricText[]) {
+export function getNewTextLevel(start: number, end: number, lyricTexts: LyricText[]) {
   const overlappingLyricTexts = lyricTexts.filter((lyricText) => {
     let isOverlapping: boolean = false;
     if (

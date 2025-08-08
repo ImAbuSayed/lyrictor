@@ -5,6 +5,7 @@ import PlayPauseButton from "../PlayBackControls";
 import EditDropDownMenu, { EditOptionType } from "../../EditDropDownMenu";
 import AddVisualizerButton from "./AddVisualizerButton";
 import AddLyricTextButton from "./AddLyricTextButton";
+import ImportSRTButton from "./ImportSRTButton";
 
 export function ToolsView({
   playing,
@@ -55,6 +56,9 @@ export function ToolsView({
           </View>
           <View>
             <AddVisualizerButton position={position} />
+          </View>
+          <View>
+            <ImportSRTButton />
           </View>
         </Flex>
 
